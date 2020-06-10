@@ -1,0 +1,12 @@
+# env
+ad_env/
+.vscode/
+
+# data
+**.csv
+data/validation/
+data/test/
+data/train/
+
+# MacOS DS_Store
+.DS_Store
