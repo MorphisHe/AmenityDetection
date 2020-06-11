@@ -38,9 +38,16 @@
     - class-description
     - test/valid/train annotations-bbox
 - created queryImages.py
-    - run with 'python3 queryImages.py'
+    - run with 'python3 queryOpenImagesV6.py'
     - will download 30 classes images and split into train, test, and validation sets
     - bug in queryImages.py, will modify tmr
     
+### 6/11/2020: finishing getting data from open image v6
+- modified downlaodOI.py to fix bug
+- modified queryOpenImagesV6.py to fix bug
+- all data download from open image:
+    - Train: 328 mins
+    - Test: 20 mins
+    - Validation: 7 mins
     
 

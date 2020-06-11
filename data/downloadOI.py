@@ -82,8 +82,9 @@ for ind in range(0, len(classes)):
 
         cnt = cnt + 1
 
-        #command = 'aws s3 --no-sign-request --only-show-errors cp s3://open-images-dataset/'+run_mode+'/'+line_parts[0]+'.jpg '+ run_mode+'/'+class_name+'/'+line_parts[0]+'.jpg'
-        command = 'aws s3 --no-sign-request --only-show-errors cp s3://open-images-dataset/'+run_mode+'/'+line_parts[0]+'.jpg'
+        command = 'aws s3 --no-sign-request --only-show-errors cp s3://open-images-dataset/'+run_mode+'/'+line_parts[0]+'.jpg '+ run_mode+'/'+class_name+'/'+line_parts[0]+'.jpg'
+        if class_name == "Kitchen_&_dining_room_table":
+            command = command.replace("Kitchen_&_dining_room_table/", "")
         commands.append(command)
         
         with open('%s/%s/%s.txt'%(run_mode,class_name,line_parts[0]),'a') as f:
@@ -91,10 +92,6 @@ for ind in range(0, len(classes)):
 
 print("Annotation Count : "+str(cnt))
 commands = list(set(commands))
-
-for c in commands:
-    print(c, "\n\n")
-
 print("Number of images to be downloaded : "+str(len(commands)))
 
 list(tqdm(pool.imap(os.system, commands), total = len(commands) ))
