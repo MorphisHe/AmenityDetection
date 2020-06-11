@@ -4,9 +4,9 @@ ad_env/
 
 # data
 **.csv
-data/validation/
-data/test/
-data/train/
+data/OpenImageV6/validation/
+data/OpenImageV6/test/
+data/OpenImageV6/train/
 
 # MacOS DS_Store
 .DS_Store
