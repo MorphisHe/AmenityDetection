@@ -1,5 +1,6 @@
 # this file uses downloadOI.py to get all data with label in subset.
 # data will be split into train, validation, and test
+# run with "python3 queryOpenImagesV6.py"
 
 import os
 import time

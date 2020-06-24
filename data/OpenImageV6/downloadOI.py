@@ -1,5 +1,5 @@
 ### Usage example: python3 downloadOI.py --classes 'Ice_cream,Cookie' --mode train
-
+# this will be run by runing queryOpenImages.py
 import argparse
 import csv
 import subprocess
