@@ -12,7 +12,10 @@ There are many websites online such as house rental, where house owners post pic
 - article: https://medium.com/airbnb-engineering/amenity-detection-and-beyond-new-frontiers-of-computer-vision-at-airbnb-144a4441b72e
 
 ### Todos
-- get dataset 
+- change Microwave_oven in Open Image to microwave
+- change Kitchen_&_dining_room_table to dining table in Open Image
+
+- get dataset (Done)
     - (Open Image V4 https://storage.googleapis.com/openimages/web/index.html)
     - contains 600 classes, filter out ones related to amenity (about 30)
     - about 32k images from 30 classes
