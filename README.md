@@ -100,6 +100,11 @@ Follow the steps on `train_amenity_detection.ipynb` notebook to train the model.
 follow steps in [deploy_detectron2.ipynb](sagemaker_deployment/deploy_detectron2.ipynb) to deploy your model on Sagemaker
 
 <br>
+
+## Sample Testset Prediction Ouput
+![amenity-detection-output](statics/amenity_detection_output.png "Title")
+
+<br>
 <br>
 <br>
 
